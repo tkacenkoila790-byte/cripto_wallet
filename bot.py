@@ -16,7 +16,7 @@ def start(m):
         "В меню встроен кошелек, легальный P2P Маркет и игровое Мини-Казино!"
     )
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
-    kb.add(KeyboardButton("📱 Открыть Экосистему PING", web_app=WebAppInfo("https://surge.sh")))
+    kb.add(KeyboardButton("📱 Открыть Экосистему PING", web_app=WebAppInfo("pingsmska-wallet-2026.surge.sh")))
     bot.send_message(m.chat.id, text, parse_mode="Markdown", reply_markup=kb)
 
 @bot.message_handler(content_types=['web_app_data'])
